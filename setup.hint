@@ -1,0 +1,10 @@
+category: Games
+requires: cygwin
+sdesc: "Crafty chess engine"
+ldesc: "Crafty is a state-of-the-art computer chess program, and uses
+all of the search algorithms you have probably read about, negascout
+search, killer/history move ordering, SEE (Static Exchange Evaluation)
+quiescence move ordering and pruning, hash (transposition/refutation)
+tables as well as evaluation caches, selective extensions, recursive
+null-move search, and a host of other features that have been used and
+are still being used in most computer chess programs."
