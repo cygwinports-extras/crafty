@@ -9,17 +9,17 @@ null-move search, and a host of other features that have been used and
 are still being used in most computer chess programs.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.24-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
-  binutils-20050610-1
-  cygport-0.2.3-1
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  make-3.80-1
-  sed-4.1.5-1
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.cis.uab.edu/hyatt/hyatt.html
@@ -30,15 +30,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack crafty-20.14-X-src.tar.bz2
+  unpack crafty-21.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./crafty-20.14-X.cygport all
+  cygport ./crafty-21.6-X.cygport all
 
 This will create:
-  /usr/src/crafty-20.14-X-src.tar.bz2
-  /usr/src/crafty-20.14-X.tar.bz2
+  /usr/src/crafty-21.6-X-src.tar.bz2
+  /usr/src/crafty-21.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,13 +51,16 @@ Files included in the binary package:
   /usr/share/crafty/crafty.hlp
   /usr/share/crafty/start.pgn
   /usr/share/crafty/startc.pgn
-  /usr/share/doc/Cygwin/crafty-20.14.README
-  /usr/share/doc/crafty-20.14/README.txt
+  /usr/share/doc/Cygwin/crafty-21.6.README
+  /usr/share/doc/crafty-21.6/README.txt
   /usr/share/man/man1/crafty.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 21.6-1 -----
+Version bump.
 
 ----- version 20.14-1 -----
 Initial release for Cygwin.

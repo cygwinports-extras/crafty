@@ -1,0 +1,27 @@
+DESCRIPTION="Crafty chess engine"
+HOMEPAGE="http://www.cis.uab.edu/hyatt/hyatt.html"
+ftphost="ftp://ftp.cis.uab.edu/pub/hyatt"
+SRC_URI="${ftphost}/source/${P}.zip ${ftphost}/book/book.bin \
+  ${ftphost}/book/bookc.bin ${ftphost}/book/books.bin \
+  ${ftphost}/documentation/crafty.doc.ascii ${ftphost}/documentation/crafty.man \
+  ${ftphost}/pgn/start.pgn ${ftphost}/pgn/startc.pgn"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake linux \
+		opt='-DBOOKDIR="\"/usr/share/crafty\"" -DLOGDIR="\"/var/log\"" -DHELPDIR="\"/usr/share/crafty\"" -DCPUS=1 -Dlock_t="volatile int"'
+
+	cp -f crafty.man crafty.1
+}
+
+src_install() {
+	cd ${B}
+	dobin crafty.exe
+	doman crafty.1
+
+	insinto /usr/share/crafty
+	doins book*.bin crafty.hlp start*.pgn
+
+	newdoc crafty.doc.ascii README.txt
+}
