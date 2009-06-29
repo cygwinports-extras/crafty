@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin libgcc1 libstdc++6
+requires: libgcc1 libstdc++6
 sdesc: "Crafty chess engine"
 ldesc: "Crafty is a state-of-the-art computer chess program, and uses
 all of the search algorithms you have probably read about, negascout
