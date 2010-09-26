@@ -8,6 +8,10 @@ tables as well as evaluation caches, selective extensions, recursive
 null-move search, and a host of other features that have been used and
 are still being used in most computer chess programs.
 
+NOTE:
+This software is non-free (license restricts usage), and therefore 
+binary packages may not be distributed for Cygwin.
+
 Runtime requirements:
   cygwin-1.7.0-45
   libgcc1-4.3.2-2

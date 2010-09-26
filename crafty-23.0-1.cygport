@@ -1,3 +1,6 @@
+# NOTE: license in main.c is clearly non-free
+# http://lists.fedoraproject.org/pipermail/legal/2010-September/001397.html
+
 DESCRIPTION="Crafty chess engine"
 HOMEPAGE="http://www.cis.uab.edu/hyatt/hyatt.html"
 ftphost="ftp://ftp.cis.uab.edu/pub/hyatt"
